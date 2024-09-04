@@ -13,7 +13,7 @@ body {
 
  .index-module-square {
     width: 500px; /* Ancho del cuadro */
-    height: 500px; /* Alto del cuadro */
+    height: 270px; /* Alto del cuadro */
     background-color: rgb(233, 199, 168); /* Color de fondo */
     border: 2px ridge rgb(92, 82, 82);
     padding: 20px; /* Espacio interior */
@@ -33,4 +33,52 @@ body {
 .form-group {
     margin-bottom: 15px; /* Espacio inferior */
     text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px; /* Aumenta el espacio interno (padding) */
+    font-size: 12px; /* Aumenta el tamaño de la fuente */
+    height: 35px; /* Fija una altura mayor */
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex; /* Usar flexbox para el diseño */
+    justify-content: space-between; /* Espacio entre los botones */
+    gap: 10px; /* Espacio superior */
+}
+
+button[type='submit'],
+button[type='reset']{
+    flex: 1; /* Ocupar todo el espacio disponible */
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: bacjground-color 0.3s ease;
+}
+
+button[type='reset'] {
+    background-color: #f44336;
+}
+
+button[type='submit']:hover,
+button[type='reset']:hover {
+    background-color: #45a049;
+}
+
+.font-password {
+    text-decoration: none;
+    color: black;
 }
