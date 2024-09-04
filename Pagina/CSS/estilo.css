@@ -1,0 +1,36 @@
+ 
+ /*  estilos de inicio_sesion.html */
+
+/* Estilo para el cuerpo de la página */
+body {
+    background-color: rgb(246, 235, 220); /* Color de fondo */
+}
+
+/* Estilo para el logo del encabezado */
+.index-module-header-logo {
+    width: 150px; /* Ancho del logo */
+}
+
+ .index-module-square {
+    width: 500px; /* Ancho del cuadro */
+    height: 500px; /* Alto del cuadro */
+    background-color: rgb(233, 199, 168); /* Color de fondo */
+    border: 2px ridge rgb(92, 82, 82);
+    padding: 20px; /* Espacio interior */
+    margin: 20px auto; /* Centrar el cuadro horizontalmente */
+    border-radius: 15px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+
+/* Estilo para el formulario de inicio de sesión */
+.login-form {
+    display: flex; /* Usar flexbox para el diseño */
+    flex-direction: column; /* Alinear los elementos en columna */
+}
+
+/* Estilo para los grupos de formulario */
+.form-group {
+    margin-bottom: 15px; /* Espacio inferior */
+    text-align: left; /* Alinear el texto a la izquierda */
+}

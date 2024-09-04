@@ -4,8 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
+    <link rel="stylesheet" type="text/css" href="./Pagina/CSS/estilo.css">
 </head>
 <body>
-    
+    <div class="index-module-header">
+        <div>
+            <img src="./Pagina/SRC/imagenes/Logo Transparente.png" alt="Logo" class="index-module-header-logo">
+        </div>
+        <header class="index-module-core-header">
+        </header>
+    </div>
+    <div class="index-module-square">
+        <h2>Inicio de Sesión</h2>
+        <form action="/login" method="post" class="login-form">
+            <div class="form-group">
+                <label for="usuario">Usuario: </label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña: </label>
+                <input type="contrasena" id="contrasena" name="contrasena" required>
+            </div>
+            <button type="submit"> Ingresar </button>
+            <button type="submit"> Registrarte </button>
+        </form>
+    </div>
 </body>
 </html>
