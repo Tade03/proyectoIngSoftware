@@ -8,7 +8,7 @@
 
  .index-module-square {
     width: 500px; /* Ancho del cuadro */
-    height: 270px; /* Alto del cuadro */
+    height: 290px; /* Alto del cuadro */
     background-color: rgb(233, 199, 168); /* Color de fondo */
     border: 2px ridge rgb(92, 82, 82);
     padding: 20px; /* Espacio interior */
@@ -145,6 +145,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin-bottom: 0.5rem;
     font-weight: 500;
     line-height: 1.2;
+    text-align: center;
 }
 
 h1, .h1 {
@@ -270,11 +271,11 @@ h1, .h1 {
 }
 
 .dashboard-nav {
-    background-color: rgba(104, 82, 62, 0.832);
+    background-color: rgba(155, 121, 98, 0.9);
 }
 
 .dashboard-nav a {
-    color: #fff;
+    color: rgba(255, 255, 255, 0.89);
 }
 
 .brand-logo {
@@ -452,7 +453,7 @@ h1, .h1 {
 
 .dashboard-toolbar {
     min-height: 84px;
-    background-color: #dfdfdf;
+    background-color: rgba(104, 82, 62, 0.832);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -467,6 +468,30 @@ h1, .h1 {
     right: 0;
     left: 0;
     z-index: 1000;
+}
+
+.dashboard-toolba-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-barra-botones{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 10px;
+}
+
+.btn-barra {
+    height: 50px;
+    width: 110px;
+    background-color: rgba(0, 0, 0, 0.37);
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: bacjground-color 0.3s ease;
+    padding: 10px;
 }
 
 .nav-item-divider {

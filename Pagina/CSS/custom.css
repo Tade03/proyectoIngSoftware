@@ -1,110 +1,88 @@
 /* Personalización del título principal (h1) */
 h1.my-4 {
-    font-size: 2.5rem;          /* Ajusta el tamaño de la fuente a 2.5 rem */
-    font-weight: none;          /* Aplica negrita al texto del título */
-    color: #000000;             /* Cambia el color del texto a gris oscuro */
-    margin-bottom: 2rem;        /* Añade un margen inferior de 2 rem para separar el título del contenido siguiente */
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 2rem;
 }
 
-/* Estilo para el elemento <small> dentro del h1 */
 h1.my-4 small {
-    font-size: 1.0rem;          /* Ajusta el tamaño de la fuente del texto pequeño a 1.2 rem */
-    color: #6c757d;             /* Aplica un color gris claro al texto pequeño */
+    font-size: 1rem;
+    color: #6c757d;
 }
-
 
 /* Estilo general para las tarjetas (.card) */
 .card {
     flex: 0 0 auto;
-    width: 200px;                /* Ajusta el ancho de la tarjeta al 100% del contenedor */
+    width: 200px;
     height: 200px;
-    border: 2px solid #ddd;     /* Aplica un borde gris claro de 2px alrededor de la tarjeta */
-    border-radius: 8px;         /* Redondea las esquinas de la tarjeta con un radio de 8px */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Añade una sombra suave alrededor de la tarjeta */
-    overflow: hidden;           /* Oculta cualquier contenido que sobresalga del borde de la tarjeta */
-    transition: transform 0.3s ease-in-out;  /* Añade una transición suave cuando se transforma la tarjeta */
-
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
 }
 
-
-/* Efecto cuando el usuario pasa el ratón por encima de la tarjeta */
 .card:hover {
-    transform: scale(1.05);     /* Agranda ligeramente la tarjeta (5%) al pasar el cursor por encima */
+    transform: scale(1.05);
 }
 
-/* Estilo para las imágenes en la parte superior de las tarjetas */
 .card-img-top {
-    height: 200px;              /* Fija la altura de las imágenes a 200px */
-    object-fit: cover;          /* Asegura que la imagen se recorte proporcionalmente y llene su contenedor */
+    height: 200px;
+    object-fit: cover;
 }
 
-/* Estilo para el título de las tarjetas */
 .card-title {
-    font-size: 1.5rem;          /* Ajusta el tamaño de la fuente del título a 1.5 rem */
-    margin-bottom: 0.75rem;     /* Añade un margen inferior de 0.75 rem para separar el título del contenido siguiente */
-    color: #000000;             /* Aplica un color azul típico de Bootstrap a los enlaces del título */
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: #000000;
     text-align: center;
 }
 
-/* Efecto cuando el usuario pasa el cursor sobre el enlace del título */
+.card-title a {
+    text-decoration: none;
+    color: #000000;
+}
+
 .card-title a:hover {
-    color: #000000;             /* Cambia el color del enlace a un azul más oscuro cuando el cursor pasa por encima */
+    color: #0056b3;
 }
 
 /* Estilo general para el contenedor */
 .container {
-    padding: 2rem 0;            /* Añade un relleno (padding) de 2 rem en la parte superior e inferior del contenedor */
+    padding: 2rem 0;
 }
 
-/* Añadir espacio entre las columnas de las tarjetas en la fila */
+/* Ajuste de las filas y columnas */
 .row {
     display: flex;
-    width: 100%;                /* Ajusta el ancho de la fila al 100% del contenedor */ 
-    flex-wrap: nowrap;          /* Las tarjetas no saltan a la siguiente línea */
-    overflow-x: hidden;         /* Deshabilita el scroll horizontal */
-    box-sizing: border-box;     /* Ajusta el tamaño de las columnas para incluir el relleno y el borde */
-    gap: 1rem;                  /* Espacio entre las tarjetas (opcional) */
-    justify-content: center;    /* Centra horizontalmente el contenido */
-    align-items: center;        /* Centra verticalmente el contenido */
+    width: 100%;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .col-lg-2 {
-    flex: 0 0 auto; /* Asegura que las columnas no se expandan más allá de su contenido */
-    max-width: 100%; /* Asegura que las columnas no excedan el ancho del contenedor */
-}
-
-/* Estilo para los enlaces dentro de los títulos de las tarjetas */
-.card-title a {
-    text-decoration: none;      /* Quita el subrayado predeterminado de los enlaces */
-    color: #000000;             /* Aplica el color azul típico de Bootstrap a los enlaces */
-}
-
-/* Efecto cuando el usuario pasa el cursor sobre los enlaces dentro de los títulos */
-.card-title a:hover {
-    color: #0056b3;             /* Cambia el color del enlace a un azul más oscuro cuando el cursor pasa por encima */
+    flex: 0 0 auto;
+    max-width: 100%;
 }
 
 /* Media Query: Ajustes para pantallas pequeñas (máximo 768px de ancho) */
 @media (max-width: 768px) {
-    /* Añade un margen inferior de 1.5 rem a las tarjetas en pantallas pequeñas */
     .card {
         margin-bottom: 1.5rem;
     }
     
-    /* Reduce la altura de las imágenes en la parte superior de las tarjetas en pantallas pequeñas */
     .card-img-top {
-        height: 80px;           /* Fija la altura de las imágenes a 150px en pantallas pequeñas */
+        height: 80px;
     }
 
-    /* Reduce el tamaño del título (h1) en pantallas pequeñas */
     h1.my-4 {
-        font-size: 2rem;         /* Ajusta el tamaño de la fuente del título a 2 rem en pantallas pequeñas */
+        font-size: 2rem;
     }
 }
 
-
 /* Home */
-
-.dashboard-nav-item{
+.dashboard-nav-item {
     height: 15px;
 }
