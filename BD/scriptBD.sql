@@ -1,5 +1,5 @@
 CREATE TABLE Clientes (
-  idCliente INTEGER UNSIGNED NOT NULL,
+  idCliente INTEGER(10) INTEGER NOT NULL,
   nombre VARCHAR(20) NULL,
   telefono NUMERIC(10) NULL,
   CONSTRAINT pk_idCliente PRIMARY KEY(idCliente)
@@ -18,7 +18,7 @@ CREATE TABLE Costos_Produccion (
 );
 
 CREATE TABLE Costos_Venta (
-  idcostos_venta INTEGER UNSIGNED NOT NULL,
+  idcostos_venta INTEGER(5) NOT NULL,
   costo_venta DECIMAL(10, 2) NULL,
   CONSTRAINT pk_idCostos_venta PRIMARY KEY(idcostos_venta)
 );
@@ -136,5 +136,5 @@ CREATE TABLE Usuarios (
 CREATE TABLE Usuarios_Contrasena (
   idUsuario INTEGER UNSIGNED NOT NULL,
   contrasena VARCHAR(25) NOT NULL,
-  CONSTRAINT fk_idUsuarioCon PRIMARY KEY(idUsuario)
+  CONSTRAINT fk_idUsuario FOREIGN KEY(idUsuario) REFERENCES Usuarios(idUsuario)
 );
