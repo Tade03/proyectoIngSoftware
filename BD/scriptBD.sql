@@ -1,18 +1,18 @@
 CREATE TABLE Clientes (
-  idCliente INTEGER(10) INTEGER NOT NULL,
+  idCliente INTEGER(10) NOT NULL,
   nombre VARCHAR(20) NULL,
   telefono NUMERIC(10) NULL,
   CONSTRAINT pk_idCliente PRIMARY KEY(idCliente)
 );
 
 CREATE TABLE Colonias (
-  idColonias INTEGER UNSIGNED NOT NULL,
+  idColonias INTEGER(5) NOT NULL,
   nombre_colonia VARCHAR(25) NULL,
   CONSTRAINT pk_idColonia PRIMARY KEY(idColonias)
 );
 
 CREATE TABLE Costos_Produccion (
-  idcostos_produccion INTEGER UNSIGNED NOT NULL,
+  idcostos_produccion INTEGER(4) NOT NULL,
   costo_produccion DECIMAL(10, 2) NULL,
   CONSTRAINT pk_costos_produccion PRIMARY KEY(idcostos_produccion)
 );
@@ -24,8 +24,8 @@ CREATE TABLE Costos_Venta (
 );
 
 CREATE TABLE Direcciones (
-  idDirecciones INTEGER UNSIGNED NOT NULL,
-  idColonias INTEGER UNSIGNED NOT NULL,
+  idDirecciones INTEGER(5) NOT NULL,
+  idColonias INTEGER(5) NOT NULL,
   calle VARCHAR(25) NULL,
   numero NUMERIC(4) NULL,
   cod_postal NUMERIC(4) NULL,
@@ -34,8 +34,8 @@ CREATE TABLE Direcciones (
 );
 
 CREATE TABLE Pedidos (
-  idPedido INTEGER UNSIGNED NOT NULL,
-  idCliente INTEGER UNSIGNED NOT NULL,
+  idPedido INTEGER(10) NOT NULL,
+  idCliente(10) UNSIGNED NOT NULL,
   nombre_pedido TIMESTAMP NULL,
   fecha_entrega DATE NULL,
   cantidad INTEGER(60) UNSIGNED NULL,
